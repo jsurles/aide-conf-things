@@ -1,0 +1,9 @@
+# BitDefender Update Noise
+/opt/bitdefender-security-tools DIR
+/opt/bitdefender-security-tools/.* PERMS
+/opt/bitdefender-security-tools/var/log LOG+ANF+ARF
+/opt/bitdefender-security-tools/var/lib PERMS
+/opt/bitdefender-security-tools/var/lib/modules/.* LOG+ANF+ARF
+!/opt/bitdefender-security-tools/var/run/antimalware-[0-9].*.pid
+!/opt/bitdefender-security-tools/var/run/antimalware-[0-9].*.sock
+!/opt/bitdefender-security-tools/var/tmp/antimalware/tmp*
